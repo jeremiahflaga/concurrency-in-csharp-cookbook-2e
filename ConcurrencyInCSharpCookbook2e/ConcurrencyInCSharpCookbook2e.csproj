@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ch01.cs" />
     <Compile Remove="ch02.cs" />
     <Compile Remove="ch03.cs" />
     <Compile Remove="ch04.cs" />
