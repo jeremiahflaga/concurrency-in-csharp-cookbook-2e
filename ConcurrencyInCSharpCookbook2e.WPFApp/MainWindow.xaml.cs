@@ -27,7 +27,7 @@ namespace ConcurrencyInCSharpCookbook2e.WPFApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new ch01_01().DoSomethingAsync();
+            //new ch01_01().DoSomethingAsync();
             //await new ch01_02().DoSomethingAsync();
         }
     }
