@@ -128,7 +128,7 @@ class ch02r02C
     }
 }
 
-class ch02r03
+public class ch02r03
 {
     async Task MyMethodAsync(IProgress<double> progress = null)
     {
@@ -137,17 +137,21 @@ class ch02r03
         while (!done)
         {
             // ...
+            percentComplete += 1;
+            await Task.Delay((int)percentComplete).ConfigureAwait(false);
             progress?.Report(percentComplete);
+            if (percentComplete >= 100)
+                done = true;
         }
     }
 
-    async Task CallMyMethodAsync()
+    public async Task CallMyMethodAsync()
     {
         var progress = new Progress<double>();
         progress.ProgressChanged += (sender, args) =>
         {
-        // ...
-    };
+            Console.WriteLine(args);
+        };
         await MyMethodAsync(progress);
     }
 }
