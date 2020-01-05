@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <Compile Remove="ch01.cs" />
-    <Compile Remove="ch03.cs" />
     <Compile Remove="ch04.cs" />
     <Compile Remove="ch05.cs" />
     <Compile Remove="ch06.cs" />

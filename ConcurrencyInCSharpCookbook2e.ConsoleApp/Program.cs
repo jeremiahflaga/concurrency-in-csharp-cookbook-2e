@@ -10,7 +10,8 @@ namespace ConcurrencyInCSharpCookbook2e.ConsoleApp
             try
             {
                 //await new ch01_console().Execute();
-                await new ch02_console().Execute();                
+                //await new ch02_console().Execute();
+                await new ch03_console().Execute();
             }
             catch (Exception ex)
             {

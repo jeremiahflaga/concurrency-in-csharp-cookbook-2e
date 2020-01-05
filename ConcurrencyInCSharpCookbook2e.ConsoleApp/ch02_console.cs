@@ -11,6 +11,7 @@ namespace ConcurrencyInCSharpCookbook2e.ConsoleApp
         {
 
             /// Chapter 2 Recipe 1
+            /// Daily cat facts! : https://alexwohlbruck.github.io/cat-facts/
             //var catFacts_withRetries = await new ch02r01().DownloadStringWithRetries(new System.Net.Http.HttpClient(), "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=2");
             //Console.WriteLine(catFacts_withRetries);
 
