@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <Compile Remove="ch01.cs" />
-    <Compile Remove="ch04.cs" />
     <Compile Remove="ch05.cs" />
     <Compile Remove="ch06.cs" />
     <Compile Remove="ch07.cs" />
@@ -15,9 +14,13 @@
     <Compile Remove="ch09.cs" />
     <Compile Remove="ch10.cs" />
     <Compile Remove="ch11.cs" />
-    <Compile Remove="ch12.cs" />
     <Compile Remove="ch13.cs" />
     <Compile Remove="ch14.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nito.AsyncEx" Version="5.0.0" />
+    <PackageReference Include="System.Linq.Async" Version="4.0.0" />
   </ItemGroup>
 
 </Project>

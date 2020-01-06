@@ -25,10 +25,14 @@ namespace ConcurrencyInCSharpCookbook2e.WPFApp
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            lblResult.Content = "Please wait...";
+
             //new ch01_01().DoSomethingAsync();
             //await new ch01_02().DoSomethingAsync();
+
+            lblResult.Content = await new ch12r00C().ModifyValueConcurrentlyAsync();
         }
     }
 }
